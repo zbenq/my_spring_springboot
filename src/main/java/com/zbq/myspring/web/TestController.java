@@ -1,6 +1,7 @@
 package com.zbq.myspring.web;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,4 +25,13 @@ public class TestController {
 			@RequestParam(value = "name", required = false) String name) {
 		return testService.getUser(name);
 	}
+	
+	@RequestMapping("/greeting")
+	public User greeting() {
+		User user = new User();
+		user.setId(UUID.randomUUID().toString());
+		user.setName("zbq");
+		return user;
+	}
+	
 }
