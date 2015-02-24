@@ -1,2 +1,3 @@
 # my_spring_springboot
-building a restful web service with spring boot
+使用spring boot构建java web，涉及：Spring Boot + MyBatis + PostgreSQL
+
